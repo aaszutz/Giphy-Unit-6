@@ -1,10 +1,43 @@
-button,
-div,
-form,
-input {
-  margin: 10px;
+#show-form {
+  padding: 10px;
+  margin: 10 px;  
 }
 
+.title {
+  font-size: 50px;
+  color: whitesmoke;
+}
 
+form, 
+div, 
+body
+button {
+  padding: 10px;
+}
 
+button {
+  padding: 10px;
+  margin-right: 10px;
+  color: rgb(125, 165, 165);
+  background-color: rgb(41, 38, 38);
+}
 
+.banner {
+  background-color: lightslategrey;
+}
+
+body {
+  background-image: url(../images/background3.jpg);
+  opacity: .98;
+}
+
+.gifContainer {
+  background: rgb(192, 192, 192);
+}
+
+.buttonLayout {
+  background-color: rgb(47, 18, 53);
+  opacity: .98;
+  padding: 10px;
+  margin-bottom: 20px;
+}

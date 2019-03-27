@@ -15,7 +15,6 @@
   padding: 10px;
   border-radius: 25px;
   font-family: 'Bungee Inline', cursive;
-
 }
 
 .showImage {
@@ -71,7 +70,19 @@ input {
   padding: 85px;
   margin: auto;
   width: 100%;
+}
 
+footer {
+  width: 100%;
+  background-color: black;
+  color: rgb(211, 102, 144);
+  font-family: 'Bungee Inline', cursive;
+  font-size: 20px;
+  text-align: center;
+  position: bottom;
+  padding: 20px;
+  margin-top: 100px;
+  
 }
 
 @media only screen and (max-width: 920px) {
@@ -86,6 +97,10 @@ input {
 
   .showImage {
    width: 90%;
+  }
+
+  .footer {
+    font-size: 12px;
   }
 }
 

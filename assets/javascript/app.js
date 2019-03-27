@@ -66,18 +66,12 @@ $(document).ready(function(){
                     url: queryURL,
                     method: 'GET'
                 })
-            //after the data comes back from the API
-                .done(function(response) {
-                    console.log(response);
-          //Storing an array of results in the results variable
+                .then(function(response) {
+                    //console.log(response);
                     var results = response.data;
-            //Looping over every result item
                     for (var i = 0; i < results.length; i++) {
-            //creating a div with the class item
                     var gifDiv = $('<div class="item">');
-            //storing the result items rating        
                     var rating = results[i].rating;
-             //creating an element to have the rating displayed
               var gifRating = $('<p>').text("Rating: " + rating);
           //creating a image tag
               var gifImage = $('<img>');
@@ -107,13 +101,13 @@ $(document).ready(function(){
         var state = $(this).data('state');
       //If the clicked image's state is still, update its src attribute to what its data-animate value is
         if (state == "still") {
-            console.log("still image works");
+           // console.log("still image works");
          // Then, set the image's data-state to animate
             $(this).attr('src', $(this).data('animate'))
                    .data('state', 'animate');
         } else {
         //  else set src to the data-still value
-            console.log("animated image works");
+            //console.log("animated image works");
             $(this).attr('src', $(this).data('still'))
                    .data('state', 'still');               
         }

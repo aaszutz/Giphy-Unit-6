@@ -1,15 +1,25 @@
 #show-form {
-  padding: 10px;
-  margin: 10 px;  
-  color: white;
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: auto; 
+  margin-bottom: 20px;
+  width: 40%;
+  float: center;
 }
 
-label {
-  margin-right: 10px;
-}
 .title {
   font-size: 50px;
-  color: whitesmoke;
+  color: rgb(211, 102, 144);
+  background-color: black;
+  margin: auto;
+  padding: 10px;
+  border-radius: 25px;
+  font-family: 'Bungee Inline', cursive;
+
+}
+
+.showImage {
+  float: center;
 }
 
 form, 
@@ -20,29 +30,65 @@ button {
 }
 
 button {
-  padding: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
-  color: rgb(125, 165, 165);
-  background-color: rgb(41, 38, 38);
-}
-
-.banner {
-  background-color: lightslategrey;
+  color:rgb(55, 21, 78);
+  background-color: white;
+  border-radius: 10px;
+  font-family: 'Gruppo', cursive;
+  font-size: 20px;
 }
 
 body {
-  background-image: url(../images/background3.jpg);
-  opacity: .98;
+  background-image: url(https://media3.giphy.com/media/3o6vXRxrhj7Ov94Gbu/source.gif);
 }
 
 .gifContainer {
+  margin-top: 10px;
   background: rgb(192, 192, 192);
+  border-radius: 10px;
+  color: rgb(55, 21, 78);
+  font-family: 'Gruppo', cursive;
+  font-size: 24px;
 }
 
 .buttonLayout {
-  background-color: rgb(47, 18, 53);
-  opacity: .98;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding-top: 20px;
 }
+
+input {
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: white;
+  font-family: 'Gruppo', cursive;
+  font-size: 18px;
+
+}
+
+.bannerBackground {
+  background-image: url(../images/background4.jpg);
+  background-repeat: initial;
+  padding: 85px;
+  margin: auto;
+  width: 100%;
+
+}
+
+@media only screen and (max-width: 920px) {
+  .title {
+    width: 100%;
+    padding: 0;
+  }
+
+  .gifContainer {
+    width: 95%;
+  }
+
+  .showImage {
+   width: 90%;
+  }
+}
+
+
+
+
